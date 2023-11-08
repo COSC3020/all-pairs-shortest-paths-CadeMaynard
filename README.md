@@ -26,3 +26,7 @@ test code from other exercises.
 
 What is the worst-case time complexity ($\Theta$) of the algorithm? Add your
 answer, including your reasoning, to this markdown file.
+
+## Runtime:
+
+Regardless of the case, this algorithm has a for loop that runs $|V|$-times inside of a for loop that runs $|V|$-times inside of a for loop that runs $|V|$-times, where $|V|$ is the number of vertices. There is another pair of nested for loops but we ignore them because they are of a lower order. Our final complexity is $\Theta(|V|^3)$
